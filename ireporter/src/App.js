@@ -1,7 +1,15 @@
-export const App=()=>{
-  return(
+import { useState } from "react";
+
+export const App=() =>{
+  const []=useState();
+  const handleBtnClick=()=>{
+    alert("Button clicked");
+  }
+  return (
     <div>
-      <h1>hello world</h1>
+      <button  onClick={handleBtnClick}>
+        click it
+      </button>
     </div>
-  )
+  );
 }
