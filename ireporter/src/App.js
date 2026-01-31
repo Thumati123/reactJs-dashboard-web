@@ -7,7 +7,7 @@ export const App=() =>{
   }
   return (
     <div>
-      <button  onClick={handleBtnClick}>
+      <button style={{color:"green"}} onClick={handleBtnClick}>
         click it
       </button>
       {number}
