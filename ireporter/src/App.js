@@ -1,15 +1,16 @@
 import { useState } from "react";
 
 export const App=() =>{
-  const []=useState();
+  const [number,setNumber]=useState(1);
   const handleBtnClick=()=>{
-    alert("Button clicked");
+    setNumber(number+1)
   }
   return (
     <div>
       <button  onClick={handleBtnClick}>
         click it
       </button>
+      {number}
     </div>
   );
 }
